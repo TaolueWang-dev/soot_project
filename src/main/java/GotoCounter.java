@@ -31,7 +31,7 @@ public class GotoCounter {
 
         for (SootMethod method : methods) {
             System.out.println("Analyzing method: " + method.getName());
-            System.out.println(method.getBody());
+//            System.out.println(method.getBody());
             Body body = method.getBody();
             for (Stmt stmt : body.getStmts()) {
                 if (stmt instanceof JGotoStmt) {

@@ -71,7 +71,16 @@ Just run the main method of GotoCounter Class. There is already put on test file
 ## Output the Statistical Result:
 sample output: 
 ```
+Analyzing method: main
 Found goto statement: goto
-Total goto statements: 2
+Found goto statement: goto
+Found goto statement: goto
+Found goto statement: goto
+Found goto statement: goto
+Found goto statement: goto
+Found goto statement: goto
+Found goto statement: goto
+Analyzing method: <init>
+Total goto statements: 8
 ```
 
