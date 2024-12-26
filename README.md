@@ -59,19 +59,18 @@ SootUp and Soot are the core dependencies of this project. You need to configure
 
 # Code Analysis
 ## Initialize the Analysis Input Location:
-The code use this two line to get Class path for analysis and count the number of Goto statements. It can modify the path to your class path
+The code use this two line to get Class path for analysis and count the number of Goto statements. It can modify the path to your class path. It should put the bytecode file here.
 
 ```
-Path pathToBinary = Paths.get("src/test/resources/Basicsetup/binary");
+Path pathToBinary = Paths.get("src/test/resources/TestClass/binary");
 AnalysisInputLocation inputLocation = PathBasedAnalysisInputLocation.create(pathToBinary, null);
 ```
 ## Compile and Run
-Just run the main method of GotoCounter Class
+Just run the main method of GotoCounter Class. There is already put on test file "testGoto.class" in the src/test/resources/TestClass/binary.
 
 ## Output the Statistical Result:
 sample output: 
 ```
-Found if statement: if l1 != 5
 Found goto statement: goto
 Total goto statements: 2
 ```

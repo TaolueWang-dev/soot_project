@@ -38,14 +38,6 @@ public class GotoCounter {
                     System.out.println("Found goto statement: " + stmt);
                     gotoCount++;
                 }
-                else if (stmt instanceof JIfStmt) {
-                    System.out.println("Found if statement: " + stmt);
-                    gotoCount++;
-                }
-                else if (stmt instanceof JSwitchStmt) {
-                    System.out.println("Found switch statement: " + stmt);
-                    gotoCount++;
-                }
             }
         }
 
